@@ -1,0 +1,222 @@
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fa;
+    color: #23272f;
+    margin: 0;
+    padding: 0;
+    line-height: 1.9;
+    font-size: 1.09rem;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    color: #1a2233;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    margin-top: 0;
+    margin-bottom: 0.7em;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.1rem;
+    margin-bottom: 1.1rem;
+}
+
+h2 {
+    font-size: 1.35rem;
+    margin-bottom: 0.7rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+}
+
+p, ul, ol {
+    margin-top: 0;
+    margin-bottom: 1.15em;
+    color: #2d313a;
+    font-weight: 400;
+    font-size: 1.09rem;
+    line-height: 1.9;
+    letter-spacing: 0.01em;
+}
+
+ul, ol {
+    padding-left: 1.5em;
+}
+
+a {
+    color: #1a2233;
+    text-decoration: underline;
+    transition: color 0.18s;
+}
+
+a:hover, a:focus {
+    color: #0056b3;
+    text-decoration: underline;
+    outline: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+nav a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    background: none;
+    transition: background 0.15s, color 0.15s;
+    letter-spacing: 0.01em;
+}
+
+nav a:hover, nav a:focus {
+    background: #e3e8f0;
+    color: #0056b3;
+    outline: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 2.5rem auto;
+    gap: 2.5rem;
+    padding: 0 1.5rem;
+}
+
+aside {
+    flex: 1 1 320px;
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 14px;
+    min-width: 260px;
+    box-shadow: 0 2px 16px rgba(30,40,90,0.07);
+    border: 1px solid #e3e8f0;
+}
+
+aside h2, section#trusted-advisor h2, main > section h2 {
+    color: #1a2233;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.7em;
+}
+
+section#trusted-advisor, main > section {
+    flex: 2 1 480px;
+    background: #fff;
+    padding: 2rem 2rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(30,40,90,0.07);
+    border: 1px solid #e3e8f0;
+}
+
+section#trusted-advisor h2, main > section h2 {
+    color: #1a2233;
+    margin-top: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+footer {
+    background: #1a2233;
+    color: #fff;
+    text-align: center;
+    padding: 2.5rem 1rem 1.5rem 1rem;
+    margin-top: 2.5rem;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -2px 12px rgba(30,40,90,0.07);
+}
+
+footer address {
+    font-style: normal;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+    font-size: 1.05rem;
+    color: #e3e8f0;
+}
+
+footer p {
+    color: #e3e8f0;
+    font-size: 1.01rem;
+    margin-bottom: 0.7em;
+}
+
+footer a {
+    color: #ffd600;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.18s;
+}
+
+footer a:hover, footer a:focus {
+    color: #fff;
+    text-decoration: underline;
+    outline: none;
+}
+
+.law-section {
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(30,40,90,0.07);
+    border: 1px solid #e3e8f0;
+    margin-bottom: 2rem;
+    flex: 1 1 320px;
+    min-width: 260px;
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0 0.5rem;
+    }
+    aside, section#trusted-advisor, main > section {
+        min-width: 0;
+        padding: 1.2rem 1rem;
+    }
+    .law-section {
+        min-width: 0;
+        padding: 1.2rem 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+    }
+    header h1 {
+        font-size: 1.3rem;
+    }
+    nav ul {
+        gap: 1rem;
+    }
+    main {
+        margin: 1rem auto;
+        gap: 1rem;
+    }
+    aside, section#trusted-advisor, main > section {
+        padding: 0.8rem 0.5rem;
+    }
+    .law-section {
+        padding: 0.8rem 0.5rem;
+        margin-bottom: 1rem;
+    }
+    footer {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+    }
+} 

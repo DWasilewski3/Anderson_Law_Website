@@ -1,14 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Anderson Law Firm, PLC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    
+    <header>
+        <h1>A Firm for Your Personal and Business Legal Matters</h1>
+        <nav aria-label="Site Navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#personal-law">Personal Law</a></li>
+                <li><a href="#business-law">Business Law</a></li>
+                <li><a href="blog.html">A Law Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="personal-law" class="law-section">
+            <h2>Personal Legal Services</h2>
+            <p>Personal law is the area of law the deals with matters related to an individual and his or her family. Our practice helps clients address their legal and financial concerns in areas including estate planning, insurance matters, civil suits, criminal matters, asset transfers, education law and other.</p>
+        </div>
+        <div id="business-law" class="law-section">
+            <h2>Business Law Services</h2>
+            <p>Business law encompasses the law governing contracts, sales, commercial paper, agency and employment law, business organizations, property, and bailments. Business law includes matters related to starting, selling, or buying a business, managing a business, dealing with employees, negotiating contracts, intellectual property, trademarks, and patents.</p>
+        </div>
+        <section id="trusted-advisor">
+            <h2>Hire an Attorney to be your Trusted Advisor</h2>
+            <p>Attorneys are experts in the law who advocate on behalf of their clients and provide legal advice for matters that arise from birth to death and every point in between. Effective lawyers see the big picture and help their clients understand their options; they are trusted advisors.</p>
+            <p>A trusted advisor offers a combination of expertise and wisdom. They create value by understanding clients goals and objectives and work with in developing options and providing advice. The Anderson Law Firm is a trusted advisor.</p>
+            <p>Our objective is to become your trusted advisor. The first step is getting to know you and your concerns. The Anderson Law Firm provides a no cost initial consultation during which we will discuss your concerns and options to address them.</p>
+            <p>Please contact us to setup a appointment for your initial consultation by phone at <a href="tel:2487920500">248.792.0500</a> or email at <a href="mailto:info@andersonplc.com">info@andersonplc.com</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <address>
+            <strong>Anderson Law Firm, PLC</strong><br>
+            PO Box 100<br>
+            Milford, MI 48381<br>
+            248.792.0500
+        </address>
+        <p>&copy; Anderson Law Firm, PLC <span id="copyright-year"></span></p>
+    </footer>
+    <script>
+      document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
