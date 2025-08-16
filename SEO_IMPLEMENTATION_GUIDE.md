@@ -147,11 +147,11 @@ Implemented comprehensive structured data markup:
 ## Technical Specifications
 
 ### URLs Used
-- Homepage: https://andersonplc.law/
-- Personal Law: https://andersonplc.law/personal-law.html
-- Business Law: https://andersonplc.law/business-law.html
-- Blog: https://andersonplc.law/blog.html
-- Sitemap: https://andersonplc.law/sitemap.xml
+- Homepage: https://andersonplc.com/
+- Personal Law: https://andersonplc.com/personal-law.html
+- Business Law: https://andersonplc.com/business-law.html
+- Blog: https://andersonplc.com/blog.html
+- Sitemap: https://andersonplc.com/sitemap.xml
 
 ### Schema.org Types Implemented
 - LegalService
