@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /blogs/_template.html
+Disallow: /blogs/ADDING-BLOG-POSTS.md
 
 Sitemap: https://andersonplc.com/sitemap.xml

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Anderson Law Firm, PLC | Estate Planning & Trusts | Milford, MI</title>
-    <meta name="description" content="Milford, Michigan estate planning attorney: wills, trusts, wealth transfer, business succession, and probate or trust administration. Practical, structured guidance for families and business owners.">
+    <meta name="description" content="Milford, MI estate planning attorney for wills, trusts, wealth transfer, business succession, and probate. Practical guidance for families and business owners.">
     <meta name="keywords" content="estate planning, trust attorney, wills, probate, trust administration, business succession, wealth transfer, Milford Michigan, Oakland County, Anderson Law Firm">
     <meta name="author" content="Anderson Law Firm, PLC">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,7 +51,7 @@
         "@type": "LegalService",
         "name": "Anderson Law Firm, PLC",
         "description": "Estate planning, trusts, wealth transfer, business succession, and probate or trust administration for individuals, families, and business owners in Milford, Michigan.",
-        "url": "https://andersonplc.com",
+        "url": "https://andersonplc.com/",
         "telephone": "+1-248-792-0500",
         "email": "info@andersonplc.com",
         "logo": "https://andersonplc.com/images/logo.png",
@@ -153,6 +153,7 @@
                     <li><a href="#business-owners" data-nav-id="business-planning">Business Planning</a></li>
                     <li><a href="#about" data-nav-id="about">About</a></li>
                     <li><a href="#contact" data-nav-id="contact">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
         </div>
@@ -175,7 +176,7 @@
                     <img src="images/hero.png" alt="Estate planning and family legacy — Anderson Law Firm, PLC, Milford, Michigan" width="1200" height="675" loading="eager" decoding="async" fetchpriority="high">
                 </figure>
                 <div class="hero__actions">
-                    <a class="btn btn--primary" href="#contact">Schedule a Consultation</a>
+                    <a class="btn btn--primary" href="#contact" data-open-schedule>Schedule a Consultation</a>
                     <a class="btn btn--secondary" href="#estate-planning">Learn More</a>
                 </div>
             </div>
@@ -278,10 +279,9 @@
                             <p><a href="tel:2487920500">248.792.0500</a></p>
                             <p><a href="mailto:info@andersonplc.com">info@andersonplc.com</a></p>
                         </address>
-                        <div class="contact-cta hs-form-embed" aria-label="Schedule a consultation">
-                            <script src="https://js-na2.hsforms.net/forms/embed/246747282.js" defer></script>
-                            <div class="hs-form-frame" data-region="na2" data-form-id="97ab693a-a1a7-457f-836c-63adbcf2e01a" data-portal-id="246747282"></div>
-                        </div>
+                        <p class="contact-cta">
+                            <button type="button" class="btn btn--primary" data-open-schedule>Schedule an initial consultation</button>
+                        </p>
                     </div>
                     <figure class="section__media">
                         <img src="images/contact.png" alt="Start a conversation about your estate plan" width="800" height="600" loading="lazy" decoding="async">
@@ -290,6 +290,21 @@
             </div>
         </section>
     </main>
+
+    <dialog class="schedule-modal" id="schedule-modal" aria-labelledby="schedule-modal-title">
+        <div class="schedule-modal__panel">
+            <div class="schedule-modal__header">
+                <h2 id="schedule-modal-title" class="schedule-modal__title">Schedule an initial consultation</h2>
+                <button type="button" class="schedule-modal__close" data-close-schedule aria-label="Close scheduling form">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="schedule-modal__body hs-form-embed">
+                <div class="hs-form-frame" data-region="na2" data-form-id="97ab693a-a1a7-457f-836c-63adbcf2e01a" data-portal-id="246747282"></div>
+            </div>
+        </div>
+    </dialog>
+    <script src="https://js-na2.hsforms.net/forms/embed/246747282.js" defer></script>
 
     <footer class="site-footer site-footer--reveal">
         <div class="container">
@@ -399,6 +414,35 @@
 
         els.forEach(function (el) {
           io.observe(el);
+        });
+      })();
+
+      (function () {
+        var dialog = document.getElementById('schedule-modal');
+        if (!dialog || typeof dialog.showModal !== 'function') return;
+
+        var openers = document.querySelectorAll('[data-open-schedule]');
+        var closer = dialog.querySelector('[data-close-schedule]');
+
+        function openSchedule(event) {
+          if (event) event.preventDefault();
+          dialog.showModal();
+        }
+
+        function closeSchedule() {
+          dialog.close();
+        }
+
+        openers.forEach(function (el) {
+          el.addEventListener('click', openSchedule);
+        });
+
+        if (closer) {
+          closer.addEventListener('click', closeSchedule);
+        }
+
+        dialog.addEventListener('click', function (event) {
+          if (event.target === dialog) closeSchedule();
         });
       })();
     </script>
