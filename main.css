@@ -557,6 +557,14 @@ html.js .site-footer--reveal {
     margin-top: 1.75rem;
 }
 
+.hs-form-embed {
+    max-width: 32rem;
+}
+
+.hs-form-embed .hs-form-frame {
+    min-height: 12rem;
+}
+
 /* Footer */
 .site-footer {
     background: var(--color-charcoal);
