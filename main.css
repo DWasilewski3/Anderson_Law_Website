@@ -468,6 +468,25 @@ html.js .site-footer--reveal {
     justify-content: center;
 }
 
+.hero__served {
+    margin: 1.5rem auto 0;
+    max-width: 52rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--color-text-gray);
+}
+
+.hero__served a {
+    color: var(--color-charcoal);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.hero__served a:hover,
+.hero__served a:focus-visible {
+    text-decoration: underline;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
@@ -685,6 +704,23 @@ html.js .site-footer--reveal {
     font-size: 0.95rem;
 }
 
+.site-footer__served {
+    margin: 0 auto 1rem;
+    max-width: 46rem;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.site-footer__served a {
+    text-decoration: underline;
+    text-underline-offset: 0.12em;
+}
+
+.site-footer__served a:hover,
+.site-footer__served a:focus-visible {
+    color: #ffffff;
+}
+
 .site-footer__copy {
     margin: 0;
     font-size: 0.875rem;
@@ -769,6 +805,10 @@ html.js .site-footer--reveal {
 .page-hero__title {
     margin-bottom: 0.85rem;
     max-width: 28ch;
+}
+
+.page-hero__title--location {
+    max-width: 36ch;
 }
 
 .page-hero__lede {
@@ -920,6 +960,87 @@ html.js .site-footer--reveal {
     flex-wrap: wrap;
     gap: 0.75rem 1rem;
     align-items: center;
+}
+
+.lead-magnet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2rem 3rem;
+}
+
+.lead-magnet__copy {
+    flex: 1 1 22rem;
+    min-width: 0;
+}
+
+.lead-magnet__media {
+    flex: 0 0 auto;
+    margin: 0;
+}
+
+.lead-magnet__form {
+    margin-top: 1.25rem;
+    max-width: 28rem;
+}
+
+.lead-magnet__amazon {
+    margin: 1rem 0 0;
+    font-size: 0.95rem;
+}
+
+.lead-magnet__amazon a {
+    font-weight: 600;
+}
+
+.practice-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+    .practice-links {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.practice-links a {
+    display: block;
+    height: 100%;
+    padding: 1.25rem 1.35rem;
+    background: #ffffff;
+    border: 1px solid var(--color-border-gray);
+    border-radius: 2px;
+    color: var(--color-text-gray);
+    text-decoration: none;
+    transition: border-color var(--duration) var(--ease-out), box-shadow var(--duration) var(--ease-out);
+}
+
+.practice-links a:hover,
+.practice-links a:focus-visible {
+    border-color: var(--color-accent);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.practice-links strong {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--color-black);
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.section--alt .practice-links a {
+    background: #ffffff;
+}
+
+.location-cta {
+    margin-top: 0;
 }
 
 /* Legacy pages (business-law, personal-law) — blog now uses .site-header / .site-footer */

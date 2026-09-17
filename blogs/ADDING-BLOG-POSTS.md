@@ -20,7 +20,7 @@ Optional (nice for SEO): add the new post to the `blogPost` array inside the Blo
 Use lowercase words separated by hyphens. Example: `trusts-for-blended-families`.
 
 Final path: `blogs/trusts-for-blended-families.html`  
-Public URL: `https://andersonplc.com/blogs/trusts-for-blended-families.html`
+Public URL: `https://andersonplc.com/blogs/trusts-for-blended-families`
 
 Do not use spaces, underscores, or special characters.
 
@@ -72,14 +72,14 @@ Add a new `<url>` block (use today’s date for `lastmod`):
 
 ```xml
 <url>
-    <loc>https://andersonplc.com/blogs/YOUR-SLUG.html</loc>
+    <loc>https://andersonplc.com/blogs/YOUR-SLUG</loc>
     <lastmod>YYYY-MM-DD</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
 </url>
 ```
 
-Also update the `lastmod` on `https://andersonplc.com/blog.html` when you add a post.
+Also update the `lastmod` on `https://andersonplc.com/blog` when you add a post.
 
 ### 6. Quick checklist before publishing
 

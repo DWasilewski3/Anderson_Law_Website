@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /blogs/_template
 Disallow: /blogs/_template.html
 Disallow: /blogs/ADDING-BLOG-POSTS.md
 
